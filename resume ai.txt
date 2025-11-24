@@ -1,0 +1,90 @@
+resume_ai
+
+JobMate/
+│
+├── backend/                      # Django backend
+│   ├── resume_ai/                # Django project core settings
+│   │   ├── __init__.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   ├── asgi.py
+│   │   └── wsgi.py
+│   │
+│   ├── accounts/                 # User authentication (JWT)
+│   │   ├── migrations/
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── models.py
+│   │   ├── serializers.py
+│   │   ├── urls.py
+│   │   └── views.py
+│   │
+│   ├── resumes/                  # Resume upload, text extraction
+│   │   ├── migrations/
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── models.py
+│   │   ├── serializers.py
+│   │   ├── urls.py
+│   │   └── views.py
+│   │
+│   ├── jobs/                     # Job descriptions & management
+│   │   ├── migrations/
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── models.py
+│   │   ├── serializers.py
+│   │   ├── urls.py
+│   │   └── views.py
+│   │
+│   ├── analysis/                 # ML/NLP endpoints (skills, match, rewrite)
+│   │   ├── __init__.py
+│   │   ├── ml_utils.py           # ML helper functions
+│   │   ├── serializers.py
+│   │   ├── urls.py
+│   │   └── views.py
+│   │
+│   ├── media/                    # Uploaded PDFs
+│   ├── static/                   # Static files (CSS, JS)
+│   ├── templates/                # If using Django templates
+│   ├── requirements.txt
+│   ├── manage.py
+│   └── .env                      # Environment variables
+│
+├── frontend/                      # React / Next.js frontend
+│   ├── public/                    # Public assets (images, icons)
+│   ├── src/
+│   │   ├── components/            # Reusable components
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── ResumeCard.jsx
+│   │   │   └── JobCard.jsx
+│   │   │
+│   │   ├── pages/                 # Next.js pages
+│   │   │   ├── index.jsx          # Landing page
+│   │   │   ├── login.jsx
+│   │   │   ├── signup.jsx
+│   │   │   ├── upload.jsx
+│   │   │   ├── analysis.jsx
+│   │   │   ├── jobmatch.jsx
+│   │   │   └── dashboard.jsx
+│   │   │
+│   │   ├── hooks/                 # Custom React hooks
+│   │   ├── context/               # React context or Zustand store
+│   │   ├── services/              # API service calls
+│   │   ├── styles/                # Tailwind / global CSS
+│   │   ├── utils/                 # Utility functions
+│   │   └── assets/                # Images, icons, illustrations
+│   │
+│   ├── package.json
+│   ├── tailwind.config.js
+│   ├── next.config.js
+│   └── .env.local
+│
+├── .gitignore
+├── README.md
+└── LICENSE
+
